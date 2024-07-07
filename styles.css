@@ -1,0 +1,84 @@
+body {
+  background-color: #0D1A2D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #FFFFFF;
+}
+
+.carte {
+  background-color: #14253D;
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.carte-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carte-titre {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #00FFF8;
+}
+
+.carte-description {
+  font-size: 1em;
+  color: #8BACD9;
+}
+
+.carte-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.carte-prix, .carte-temps {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.icône {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.carte-prix {
+  color: #00FFF8;
+  font-weight: bold;
+}
+
+.carte-temps {
+  color: #8BACD9;
+}
+
+.carte-createur {
+  display: flex;
+  align-items: center;
+}
+
+.createur-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.createur-nom a {
+  color: #8BACD9;
+  text-decoration: none;
+}
+
+.createur-nom a:hover {
+  color: #00FFF8;
+}

@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-color: darkgray;
+}
+
+.container {
+    background: rgb(199, 218, 226);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.enigme {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.input-area {
+    margin-bottom: 10px;
+}
+
+.input-area input {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.score, .timer {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    animation: fadeIn 1s forwards;
+}
+
+.restart-btn {
+    display: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restart-btn:hover {
+    background-color: #0056b3;
+}
+
+.animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: fadeInOut 1s forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.correct {
+    animation: correctAnimation 1s forwards;
+}
+
+.incorrect {
+    animation: incorrectAnimation 1s forwards;
+}
+
+@keyframes correctAnimation {
+    0% { background-color: white; }
+    50% { background-color: green; }
+    100% { background-color: white; }
+}
+
+@keyframes incorrectAnimation {
+    0% { background-color: white; }
+    50% { background-color: red; }
+    100% { background-color: white; }
+}
+
+.difficulty {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.leaderboard {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.title2 {
+font-family: 'Georgia';
+color: #0056b3;
+}
+
+.word{
+    border-style: hidden;
+    background-color: #f0f0f0;
+    border-radius: 5%;
+}
+
+.verif-btn{
+    background-color: #0056b3;
+    height:26px ;
+}
+
+.verif-btn:hover{
+    background-color: #f0f0f0;
+}
